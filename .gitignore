@@ -18,7 +18,7 @@ x64/
 
 # Packages (we will download them via NuGet Package Restore)
 
-packages/
+# packages/
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/
