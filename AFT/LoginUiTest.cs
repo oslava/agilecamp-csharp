@@ -43,5 +43,23 @@ namespace AFT
                 Assert.True(loginErrorMessage.Displayed);
             }
         }
+        [Test]
+        public void IfPasswordIsNull_ShowErrorMessage()
+        {
+            using (var driver = new ChromeDriver())
+            {
+                LoginPage loginPage = new LoginPage(driver);
+
+                loginPage.Navigate().EmailInput().SendKeys("xxx@dddd.tt");
+  
+                var displayed = loginPage
+                   .Navigate()
+                   .Submit()
+                   .PasswordErrorMessage()
+                   .Displayed;
+
+                Assert.True(displayed);
+            }
+        }
     }
 }

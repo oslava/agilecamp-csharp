@@ -33,5 +33,10 @@ namespace AFT
         {
             return driver.FindElementByXPath("//*[@id='loginForm']/form/div[1]/div/input");
         }
+
+        public IWebElement PasswordErrorMessage()
+        {
+            return driver.FindElementByXPath("//*[@id='loginForm']/form/div[2]/div/span/span");
+        }
     }
 }
