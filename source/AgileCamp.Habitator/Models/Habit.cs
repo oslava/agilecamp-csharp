@@ -19,7 +19,13 @@ namespace AgileCamp.Habitator.Models
 
         public Habit(string name)
         {
-            throw new ArgumentNullException();
+            if (name == null)
+                throw new ArgumentNullException();
+
+            if (name.Length < 2)
+                throw new ArgumentException();
+
+            this.Name = "Привычка:" + name;
         }
     }
 }
