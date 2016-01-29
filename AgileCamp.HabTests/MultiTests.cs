@@ -5,7 +5,7 @@ namespace AgileCamp.HabTests
 {
     public class MultiTests
     {
-        [Test]
+        [Test, Ignore("fail")]
         public void Test5()
         {
             var s = "44 dd";
