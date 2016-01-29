@@ -12,6 +12,7 @@ namespace AgileCamp.Habitator.Controllers
         public ActionResult AddNew()
         {
             return View();
+
         }
 
         //[HttpPost]
