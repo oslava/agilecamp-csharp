@@ -5,3 +5,5 @@
 Материалы для изучения:
 
 [Continuous Integration: Работа с Config-файлами](http://blog.byndyu.ru/2013/05/continuous-integration-config.html)
+
+*foobar*
